@@ -68,33 +68,33 @@ I focus on **software quality, user experience, and delivering stable releases.*
 - Wrote structured positive & negative test cases  
 - Logged detailed bugs in Jira  
 - Added screenshots & documentation  
-🔗 GitHub: *Add link*
+🔗 GitHub: [View Project](https://github.com/Jahidultr/jahidul-sqa-portfolio/tree/main/manual-testing/amazon-login-testing)
 
 ---
 
 ### 🛍 **Manual Testing – Othoba.com**
 - Functional + Regression test cases  
 - Tested search → cart → checkout flows  
-🔗 Test Case Sheet: *Add link*
+🔗 Test Case Sheet: [View Project](https://docs.google.com/spreadsheets/d/1SIkSW4waMKpeKyF9O-FdGDihxjTPewWmedW8kOFfEo8/edit?gid=0#gid=0)
+
+---
+
+### ⭐ **UI Automation – Unimart Online (Java Selenium)**
+- Product search & UI flow automation  
+🔗 GitHub: [View Project](https://github.com/Jahidultr/selenium_web_auto_Unimart_online)
 
 ---
 
 ### 🔌 **API Testing Automation – Robot Framework**
 - Automated GET/POST endpoints  
 - Validated schema, status codes & responses  
-🔗 GitHub: *Add link*
+🔗 GitHub: *Add link* [View Project](https://github.com/Jahidultr/Problem_Api_test_with_Robot/tree/master/tests)
 
 ---
 
 ### 🤖 **Web Automation – Selenium (Python)**
 - Automated login, forms & navigation  
-🔗 GitHub: *Add link*
-
----
-
-### ⭐ **UI Automation – Unimart Online (Java Selenium)**
-- Product search & UI flow automation  
-🔗 GitHub: *Add link*
+🔗 GitHub: [View Project](https://github.com/Jahidultr/Automation_Web)
 
 ---
 
