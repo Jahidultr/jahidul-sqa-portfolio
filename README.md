@@ -3,7 +3,7 @@
   <!-- Add your banner image here later if you want -->
 </p>
 
-<h1 align="center">✨ MD. JAHIDUL ISLAM – SQA Engineer ✨</h1>
+<h1 align="center"> MD. JAHIDUL ISLAM – SQA Engineer </h1>
 
 <p align="center">
   <b>Manual Testing • API Testing • Automation • Bug Reporting • QA Documentation</b>
