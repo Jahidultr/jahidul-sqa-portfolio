@@ -22,9 +22,9 @@ This project automates the complete **User Management lifecycle** on the OrangeH
 
 ## 🎥 Cypress Test Execution (Live Run)
 
-This video demonstrates the automated test execution of the OrangeHRM application using Cypress, including login, navigation, and validation scenarios.
+This video demonstrates the automated test execution of the OrangeHRM application using Cypress, covering login, user management, and validation scenarios.
 
-👉 [Watch Test Execution on LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:7452042748419031040/)
+👉 [Watch Full Test Execution on LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:7452042748419031040/)
 
 ---
 
