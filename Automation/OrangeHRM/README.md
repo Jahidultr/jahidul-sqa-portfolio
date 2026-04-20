@@ -16,8 +16,15 @@ This project automates the complete **User Management lifecycle** on the OrangeH
 - Create User  
 - Search User  
 - Verify Details
+
   
 🌐 **App URL:** https://opensource-demo.orangehrmlive.com/
+
+## 🎥 Cypress Test Execution (Live Run)
+
+This video demonstrates the automated test execution of the OrangeHRM application using Cypress, including login, navigation, and validation scenarios.
+
+👉 [Watch Test Execution on LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:7452042748419031040/)
 
 ---
 
