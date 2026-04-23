@@ -112,7 +112,8 @@ Before running the project, make sure you have:
 
 ```bash
 git clone https://github.com/Jahidultr/jahidul-sqa-portfolio.git
-cd jahidul-sqa-portfolio/Automation/OrangeHRM
+cd jahidul-sqa-portfolio
+cd Automation/OrangeHRM
 ```
 
 ### 2️⃣ Install Dependencies
