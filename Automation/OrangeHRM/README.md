@@ -29,7 +29,7 @@ This video demonstrates the automated test execution of the OrangeHRM applicatio
 ---
 ## 📊 Report
 
-👉 [View HTML Report](https://github.com/Jahidultr/jahidul-sqa-portfolio/blob/main/Automation/OrangeHRM/cypress/reports/mochawesome.html)
+👉 [View Live Report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Jahidultr/jahidul-sqa-portfolio/main/Automation/OrangeHRM/cypress/reports/mochawesome.html)
 
 ## 🏗️ Project Structure
 
