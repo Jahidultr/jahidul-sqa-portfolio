@@ -1,4 +1,4 @@
-# OrangeHRM Test Automation 🍊
+# OrangeHRM Test Automation 
 
 ![Cypress](https://img.shields.io/badge/Cypress-15+-04C38E?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge)
