@@ -1,8 +1,8 @@
 # OrangeHRM Test Automation 🍊
 
-![Cypress](https://img.shields.io/badge/Cypress-15.14.0-04C38E?style=for-the-badge&logo=cypress&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node](https://img.shields.io/badge/Node.js-v22.11.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Cypress](https://img.shields.io/badge/Cypress-15+-04C38E?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge)
+![Node](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge)
 
 > End-to-end test automation for **OrangeHRM User Management** — built with Cypress using the Page Object Model pattern.
 
@@ -120,6 +120,7 @@ cd Automation/OrangeHRM
 
 ```bash
 npm install
+npx cypress open
 ```
 
 ### 3️⃣ Check Environment Variables
