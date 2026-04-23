@@ -27,6 +27,9 @@ This video demonstrates the automated test execution of the OrangeHRM applicatio
 👉 [Watch Full Test Execution on LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:7452042748419031040/)
 
 ---
+## 📊 Report
+
+👉 [View HTML Report](https://github.com/Jahidultr/jahidul-sqa-portfolio/blob/main/Automation/OrangeHRM/cypress/reports/mochawesome.html)
 
 ## 🏗️ Project Structure
 
