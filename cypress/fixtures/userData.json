@@ -1,0 +1,8 @@
+{
+    "newUser": {
+        "userRole": "Admin",
+        "status": "Enabled",
+        "password": "Admin@1234",
+        "confirmPassword": "Admin@1234"
+    }
+}
