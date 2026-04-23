@@ -47,12 +47,23 @@ orangehrm-cypress/
 │   │   ├── 📄 LoginPage.js                → POM: Login page
 │   │   └── 📄 UserManagementPage.js       → POM: User Management page
 │   │
-│   └── 📁 support/
-│       ├── 📄 commands.js                 → Custom Cypress commands
-│       └── 📄 e2e.js                      → Global support config
+│   ├── 📁 reports/
+│   │   ├── 📁 assets/                     → Report CSS/JS files
+│   │   ├── 📄 mochawesome.html            → Test execution HTML report
+│   │   └── 📄 mochawesome.json            → Raw test result data
+│   │
+│   ├── 📁 screenshots/                   → Failure screenshots
+│   │
+│   ├── 📁 support/
+│   │   ├── 📄 commands.js                 → Custom Cypress commands
+│   │   └── 📄 e2e.js                      → Global support config
+│   │
+│   └── 📁 videos/                        → Test run recordings
 │
-├── 📄 cypress.config.js                   → Cypress settings
-├── 📄 cypress.env.json                    → Environment variables
+├── 📁 node_modules/                      → (ignored via .gitignore)
+├── 📄 cypress.config.js                  → Cypress settings
+├── 📄 cypress.env.json                   → Environment variables
+├── 📄 package-lock.json
 ├── 📄 package.json
 └── 📄 README.md
 ```
