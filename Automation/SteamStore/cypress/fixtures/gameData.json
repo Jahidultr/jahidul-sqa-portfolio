@@ -1,0 +1,20 @@
+{
+  "firstGame": {
+    "name": "Dota 2",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "releaseDate": "9 Jul, 2013",
+    "reviewSummary": "Very Positive",
+    "price": "Free"
+  },
+  "secondGame": {
+    "name": "Dota 2 Player Profiles",
+    "platforms": [],
+    "releaseDate": "13 Nov, 2015",
+    "reviewSummary": "Very Positive",
+    "price": "Free"
+  }
+}

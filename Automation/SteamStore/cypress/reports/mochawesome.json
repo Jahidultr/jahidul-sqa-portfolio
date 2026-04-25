@@ -1,0 +1,342 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-25T17:56:45.851Z",
+    "end": "2026-04-25T17:56:59.411Z",
+    "duration": 13560,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d1eadc2f-4df5-42b4-97f5-e01e40174d7d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\steamStore.cy.js",
+      "file": "cypress\\e2e\\steamStore.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c3b88f9-2e41-4793-9cb0-3307f90238cb",
+          "title": "Steam Store - Search and Verification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01: Search results page correctly displayed",
+              "fullTitle": "Steam Store - Search and Verification TC01: Search results page correctly displayed",
+              "timedOut": null,
+              "duration": 9998,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.step(\"Step 3: Verify search results page is displayed\");\ncy.url().should(\"include\", \"/search\");\ncy.get(\"#search_resultsRows a\", {\n  timeout: 15000\n}).should(\"exist\");",
+              "err": {},
+              "uuid": "7e24e92e-bdaf-411a-becf-ff949f730260",
+              "parentUUID": "8c3b88f9-2e41-4793-9cb0-3307f90238cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC02:Search box contains 'Dota 2'",
+              "fullTitle": "Steam Store - Search and Verification TC02:Search box contains 'Dota 2'",
+              "timedOut": null,
+              "duration": 85,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.step(\"Step 3: Verify search query contains Dota 2\");\ncy.url().should(\"include\", \"Dota\");",
+              "err": {},
+              "uuid": "8cac7819-f520-4f4a-a39f-dc1721eb3b69",
+              "parentUUID": "8c3b88f9-2e41-4793-9cb0-3307f90238cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC03: First result name exactly matches 'Dota 2'",
+              "fullTitle": "Steam Store - Search and Verification TC03: First result name exactly matches 'Dota 2'",
+              "timedOut": null,
+              "duration": 124,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.step(\"Step 3: Verify first result is Dota 2\");\ncy.get(\"#search_resultsRows a\", {\n  timeout: 15000\n}).first().find(\".title\").invoke(\"text\").invoke(\"trim\").should(\"equal\", \"Dota 2\");",
+              "err": {},
+              "uuid": "7dc5324a-d1f7-4696-a917-db464a7405cf",
+              "parentUUID": "8c3b88f9-2e41-4793-9cb0-3307f90238cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "fa4377fd-b61c-494b-800a-8b8e51835dcc",
+              "title": "Step 4: Store Game Data from Search Results",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "TC04: Extract and store data from 1st search result",
+                  "fullTitle": "Steam Store - Search and Verification Step 4: Store Game Data from Search Results TC04: Extract and store data from 1st search result",
+                  "timedOut": null,
+                  "duration": 89,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 4: Extract data from 1st game\");\n_SteamSearchPage.default.extractGameData(0).then(data => {\n  firstGame = data;\n  cy.writeFile(\"cypress/fixtures/gameData.json\", {\n    firstGame,\n    secondGame\n  });\n  cy.log(`Name        : ${firstGame.name}`);\n  cy.log(`Platforms   : ${firstGame.platforms.join(\", \")}`);\n  cy.log(`Release Date: ${firstGame.releaseDate}`);\n  cy.log(`Review      : ${firstGame.reviewSummary}`);\n  cy.log(`Price       : ${firstGame.price}`);\n  expect(firstGame.name).to.equal(\"Dota 2\");\n  expect(firstGame.releaseDate).to.not.be.empty;\n});",
+                  "err": {},
+                  "uuid": "937ab89c-f925-425c-aed9-be2494bfb617",
+                  "parentUUID": "fa4377fd-b61c-494b-800a-8b8e51835dcc",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "TC05: Extract and store data from 2nd search result",
+                  "fullTitle": "Steam Store - Search and Verification Step 4: Store Game Data from Search Results TC05: Extract and store data from 2nd search result",
+                  "timedOut": null,
+                  "duration": 82,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 4: Extract data from 2nd game\");\n_SteamSearchPage.default.extractGameData(1).then(data => {\n  secondGame = data;\n  cy.writeFile(\"cypress/fixtures/gameData.json\", {\n    firstGame,\n    secondGame\n  });\n  cy.log(`Name        : ${secondGame.name}`);\n  cy.log(`Platforms   : ${secondGame.platforms.join(\", \")}`);\n  cy.log(`Release Date: ${secondGame.releaseDate}`);\n  cy.log(`Review      : ${secondGame.reviewSummary}`);\n  cy.log(`Price       : ${secondGame.price}`);\n  expect(secondGame.name).to.not.be.empty;\n  expect(secondGame.releaseDate).to.not.be.empty;\n});",
+                  "err": {},
+                  "uuid": "4254aa6b-ab52-487f-ae32-581fe15014b6",
+                  "parentUUID": "fa4377fd-b61c-494b-800a-8b8e51835dcc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "937ab89c-f925-425c-aed9-be2494bfb617",
+                "4254aa6b-ab52-487f-ae32-581fe15014b6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 171,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "debe2575-6fee-4696-81d3-96037983981a",
+              "title": "Step 5: Re-search Using Second Game Name",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "TC06: Re-search using the 2nd game name",
+                  "fullTitle": "Steam Store - Search and Verification Step 5: Re-search Using Second Game Name TC06: Re-search using the 2nd game name",
+                  "timedOut": null,
+                  "duration": 2180,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 5: Re-search using 2nd game name\");\ncy.visit(`https://store.steampowered.com/search/?term=${encodeURIComponent(secondGame.name)}`);\ncy.get(\"#search_resultsRows a\", {\n  timeout: 20000\n}).should(\"exist\");",
+                  "err": {},
+                  "uuid": "dc370264-8596-4965-b782-507c010bff59",
+                  "parentUUID": "debe2575-6fee-4696-81d3-96037983981a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "dc370264-8596-4965-b782-507c010bff59"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2180,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "8c698d75-f63e-4f49-9d0d-34423b95616a",
+              "title": "Step 6: Final Verification",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "TC07: Search box contains the 2nd game name",
+                  "fullTitle": "Steam Store - Search and Verification Step 6: Final Verification TC07: Search box contains the 2nd game name",
+                  "timedOut": null,
+                  "duration": 161,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 6: Verify search query updated with 2nd game\");\ncy.url().should(\"include\", secondGame.name.split(\" \")[0]);",
+                  "err": {},
+                  "uuid": "1960a143-7048-4bea-b806-4ee3b7c72dcd",
+                  "parentUUID": "8c698d75-f63e-4f49-9d0d-34423b95616a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "TC08: Result list contains 1st game (Dota 2)",
+                  "fullTitle": "Steam Store - Search and Verification Step 6: Final Verification TC08: Result list contains 1st game (Dota 2)",
+                  "timedOut": null,
+                  "duration": 45,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 6: Verify result list contains first game\");\ncy.get(\"#search_resultsRows a\", {\n  timeout: 20000\n}).then($rows => {\n  const allNames = [...$rows].map(row => Cypress.$(row).find(\".title\").text().trim());\n  expect(allNames).to.include(firstGame.name);\n});",
+                  "err": {},
+                  "uuid": "e4817cd9-409b-49f4-bfe1-5559b6c51879",
+                  "parentUUID": "8c698d75-f63e-4f49-9d0d-34423b95616a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "TC9: Result list contains 2nd game",
+                  "fullTitle": "Steam Store - Search and Verification Step 6: Final Verification TC9: Result list contains 2nd game",
+                  "timedOut": null,
+                  "duration": 32,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 6: Verify result list contains second game\");\ncy.get(\"#search_resultsRows a\").then($rows => {\n  const allNames = [...$rows].map(row => Cypress.$(row).find(\".title\").text().trim());\n  expect(allNames).to.include(secondGame.name);\n});",
+                  "err": {},
+                  "uuid": "55509e06-6332-4e11-94b2-9706e928b720",
+                  "parentUUID": "8c698d75-f63e-4f49-9d0d-34423b95616a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "TC10: All stored data matches for the 2nd game",
+                  "fullTitle": "Steam Store - Search and Verification Step 6: Final Verification TC10: All stored data matches for the 2nd game",
+                  "timedOut": null,
+                  "duration": 57,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.step(\"Step 6: Verify stored data matches for 2nd game\");\n_SteamSearchPage.default.extractGameData(0).then(freshData => {\n  expect(freshData.name).to.equal(secondGame.name);\n  expect(freshData.releaseDate).to.equal(secondGame.releaseDate);\n  expect(freshData.price).to.equal(secondGame.price);\n});",
+                  "err": {},
+                  "uuid": "8de6b0bd-77b2-4d33-a6b3-ca5442fb92da",
+                  "parentUUID": "8c698d75-f63e-4f49-9d0d-34423b95616a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1960a143-7048-4bea-b806-4ee3b7c72dcd",
+                "e4817cd9-409b-49f4-bfe1-5559b6c51879",
+                "55509e06-6332-4e11-94b2-9706e928b720",
+                "8de6b0bd-77b2-4d33-a6b3-ca5442fb92da"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 295,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "7e24e92e-bdaf-411a-becf-ff949f730260",
+            "8cac7819-f520-4f4a-a39f-dc1721eb3b69",
+            "7dc5324a-d1f7-4696-a917-db464a7405cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10207,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "reportTitle": "SteamStore Test Report",
+        "reportPageTitle": "Cypress Test Results",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
