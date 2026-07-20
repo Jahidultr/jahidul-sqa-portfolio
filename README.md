@@ -108,7 +108,7 @@ I focus on **software quality, user experience, and delivering stable releases.*
 
 ## 🎓 Education  
 🎓 **BSc in CSE** – Dhaka International University  
-CGPA: **3.69 / 4.00**
+CGPA: **3.33 / 4.00**
 
 🎓 HSC – GPA 4.65  
 🎓 SSC – GPA 4.80  
